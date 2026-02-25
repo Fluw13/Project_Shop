@@ -335,6 +335,17 @@
             margin: 0 auto;
         }
 
+        /* hover cho gg va fb */
+        .linkfb:hover{
+            background-color: white;
+            color: blue;
+        }
+
+        .linkgg:hover {
+            background-color: white;
+            color: red;
+        }
+
 
         /* Chinh cho phan o dang nhap */
 
