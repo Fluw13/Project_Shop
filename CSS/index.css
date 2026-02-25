@@ -1,0 +1,357 @@
+/* Yeu to chinh */     
+        * { 
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            min-height: 100vh;
+            background-color: red;
+            width: 100%;
+            min-width: max-content;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 170px;
+            width: 100%;
+            min-width: 100%;
+            display: flex;
+            background-color: #f2f2f2;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .Main-center {
+            width: 95%;
+            height: 70%;
+            margin: 0 auto;
+        }
+
+        footer {
+            height: 20%;
+            background-color: #f4f0f0;
+            border-radius:50px 50px 0 0;
+        }
+
+    /*View port for PC */
+        .product {
+            width: 23%;
+        }
+
+    /* View port for table */
+        @media (max-width: 1024px) {
+            .product {
+                width: 45%;
+            }
+        }
+
+    /* View port for mobile */
+        @media (max-width: 600px) {
+            .product {
+                width: 100%;
+            }
+        }
+/* Yeu to chinh */
+
+
+/* Cac tinh nang phan head */
+    /* Logo phan dau head " vi tri ben trai tren cung " */
+        .Logo a {
+            text-decoration: none;
+        }
+
+        .Logo img{
+            position: relative;
+            top: -10%;
+            height: 180px;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        .Logo {
+            justify-content: center;
+        }
+
+    /* Menu phan dau head " vi tri o giua tren cung " */
+        .menu ul{
+            display: flex;
+            list-style: none;
+            padding: 50px 100px;
+        }
+
+        .menu li {
+            padding: 10px;
+            margin: 0 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: x-large;
+            display: block;
+            
+        }
+
+        .menu li:not(.chil-shop li):hover {
+            background-color: white;
+            box-shadow: 0 2.5px 5px black;
+            border-radius: 10px;
+        }
+
+
+        .menu li {
+            display: block;
+        }
+
+    /* Cac con cua menu */    
+        .chil-shop li {
+            margin: 0;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .chil-shop li:hover {
+            background-color: white;
+            box-shadow: 5px 10px 20px black;
+            border-radius: 10px;
+            transform: scale(1.1);
+        }
+
+        .chil-shop {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            position: absolute;
+            list-style: none;
+            visibility: hidden;
+            transition: 0.3s ease;
+            opacity: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .shop {
+            position: relative;
+        }
+
+        .shop:hover .chil-shop{
+            visibility: visible;
+            opacity: 1;
+            border-radius: 10px;
+        }
+
+    /* Phan Logo phan dau head " vi tri o ben phai tren cung " */
+        .search-login-translan ul {
+            list-style: none;
+            display: flex;
+            transition: 0.3s ease;
+            padding: 30px 0;
+        }
+
+        .search-login-translan li {
+            margin: 20px;
+        }
+
+        .search-login-translan li:hover {
+            transform: scale(1.1);
+        }
+
+        .search-login-translan a {
+            text-decoration: none;
+        }
+
+        .logo-search img, .logo-giohang img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-search img{
+            padding-top: 5px;
+        }
+
+        .logo-login a{
+            color: black;
+            font-size: large;
+        }
+
+        .logo-login {
+            padding-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+/* Cac tinh nang phan head */
+
+
+/* Cac tinh nang phan body */
+    /* Phan table */
+        table {
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 100%;
+        }
+
+        td {
+            padding: 10px ;
+        }
+    /* Phan table */
+
+
+    /* Phan Logo cua moi san pham/Product */
+        .main-logo {
+            width: 100%;
+        }
+
+        .main-logo img{
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+    /* Phan Logo cua moi san pham/Product */ 
+    
+    
+
+    /* Tieu de cua moi muc san pham */ 
+        .Title-logo {
+            padding-left: 20px;
+        }
+    /* Tieu de cua moi muc san pham */
+
+
+
+    /* Thanh phan cua cac san pham */
+    .product {
+            text-decoration: none;
+            display: block;
+            transition: 0.3s ease;
+            padding: 10px;
+            background-color: #fffafa;
+            border: 2px solid red;
+            border-radius: 20px;
+            width: 250px;
+            height: 325px;
+        }
+
+        .product img {
+            border-radius: 20px;
+            width: 225px;
+            height: 225px;
+
+        }
+
+
+        .title-product {
+            text-align: center;
+            padding-top: 10px; 
+            color: black;
+        }
+
+        .price-product {
+            text-align: center;
+            padding-top: 10px;
+            color: black;
+        }
+
+        .product:hover {
+            transform:translateY(-10px)
+        }    
+    /* Thanh phan cua cac san pham */
+
+
+    /* Phan xem them cac san pham khac */
+        .all {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .all a {
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: large;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            display: inline-block;
+        }
+
+        .all a:hover {
+        color: red;
+        background-color: white;
+        border: 1px solid red;
+        }
+    /* Phan xem them cac san pham khac */
+    
+/* Cac tinh nang phan body */   
+
+
+/* Cac tinh nang cua phan footer */
+    /* phan chung cua footer */    
+        .footer {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .nameshop, .policies, .information {
+            padding-left: 60px;
+            padding-top: 40px;
+            flex: 1;
+            min-width: 250px;
+        }
+    /* Logo cua shop */
+        .nameshop img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }    
+    /* Policies */
+        .policies ul {
+            list-style: none;
+            position: relative;
+            left: -20px;
+        }
+
+        .policies a {
+            color: black;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .policies li:hover {
+            overflow: hidden;
+            transform: scale(1.1);
+            color: black;
+            text-decoration: underline;
+        }
+
+        .policies li {
+            padding-top: 20px;
+        }
+    /* Information */    
+        .information ul {
+            list-style: none;
+        }
+
+        .information a {
+            text-decoration: none;
+            color: black;
+            transition: 0.3s ease;
+        }
+
+        .information li:hover {
+            overflow: hidden;
+            transform: scale(1.1);
+            color: black;
+            text-decoration: underline;
+
+        }
+
+        .information li {
+            padding-top: 20px;
+        }
+/* Cac tinh nang cua phan footer */

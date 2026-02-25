@@ -1,0 +1,449 @@
+/* yeu to chinh */
+       * { 
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: auto;
+            min-width: max-content;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 170px;
+            width: 100%;
+            min-width: 100%;
+            display: flex;
+            background-color: #f2f2f2;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .Main-center {
+            width: 95%;
+            height: 70%;
+            margin: 0 auto;
+        }
+
+        footer {
+            height: 20%;
+            background-color: #f4f0f0;
+            border-radius:50px 50px 0 0;
+        }
+
+    /*View port for PC */
+        .product {
+            width: 23%;
+        }
+
+    /* View port for table */
+        @media (max-width: 1024px) {
+            .product {
+                width: 45%;
+            }
+        }
+
+    /* View port for mobile */
+        @media (max-width: 600px) {
+            .product {
+                width: 100%;
+            }
+        }        
+
+    /* Mau nen cho web */
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient( -45deg,
+                    #ff9a9e,
+                    #fad0c4,
+                    #a1c4fd,
+                    #c2e9fb
+            );
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+            @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+/* yeu to chinh */
+
+
+/* Cac tinh nang phan head */
+    /* Logo phan dau head " vi tri ben trai tren cung " */
+        .Logo a {
+            text-decoration: none;
+        }
+
+        .Logo img{
+            position: relative;
+            top: -10%;
+            height: 180px;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        .Logo {
+            justify-content: center;
+        }
+
+    /* Menu phan dau head " vi tri o giua tren cung " */
+        .menu ul{
+            display: flex;
+            list-style: none;
+            padding: 50px 100px;
+        }
+
+        .menu li {
+            padding: 10px;
+            margin: 0 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: x-large;
+            display: block;
+            
+        }
+
+        .menu li:not(.chil-shop li):hover {
+            background-color: white;
+            box-shadow: 0 2.5px 5px black;
+            border-radius: 10px;
+        }
+
+        .menu li {
+            display: block;
+        }
+
+    /* Phan con cua class = "menu" */
+
+         .chil-shop li {
+            margin: 0;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .chil-shop li:hover {
+            background-color: white;
+            box-shadow: 5px 10px 20px black;
+            border-radius: 10px;
+            transform: scale(1.1);
+        }
+
+        .chil-shop {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            position: absolute;
+            list-style: none;
+            visibility: hidden;
+            transition: 0.3s ease;
+            opacity: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .shop {
+            position: relative;
+        }
+
+        .shop:hover .chil-shop {
+            visibility: visible;
+            opacity: 1;
+            border-radius: 10px;
+        }
+
+    /* Phan Logo phan dau head " vi tri o ben phai tren cung " */
+        .search-login-translan ul {
+            list-style: none;
+            display: flex;
+            transition: 0.3s ease;
+            padding: 30px 0;
+        }
+
+        .search-login-translan li {
+            margin: 20px;
+        }
+
+        .search-login-translan li:hover {
+            transform: scale(1.1);
+        }
+
+        .search-login-translan a {
+            text-decoration: none;
+        }
+
+        .logo-search img, .logo-giohang img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-search img{
+            padding-top: 5px;
+        }
+
+        .logo-login a{
+            color: black;
+            font-size: large;
+        }
+
+        .logo-login {
+            padding-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+/* Cac tinh nang phan head */
+
+
+
+/* Cac tinh nang phan body */
+
+
+    /* Phan tinh nang table */
+        table {
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 40%;
+            height: 400px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            background: linear-gradient( -45deg,
+                    #fe989c,
+                    #fad0c4,
+                    #a1c4fd,
+                    #c2e9fb
+            );
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+            }
+
+            @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Chu cai tieu de && phan dang nhap*/   
+
+        .login {
+            text-align: center;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }  
+
+        .login a {
+            color: blue;
+        }
+
+        /* Tieu de gui emai */
+
+        .letter-for-email {
+            text-align: center;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .letter-for-email h3 {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        /* Phan nhap cac thong tin input */
+
+        .inputt {
+            padding-left: 20px;
+        }
+        
+        .inputt input{
+           border: none;
+           width: 90%;
+           height: 60%;
+           color: rgb(0, 0, 0);
+           font-size: large;
+           padding-left: 5px;
+           padding-top: 5px;
+           padding-bottom: 5px;
+           background-color: rgb(255, 255, 255, 0);
+           border-bottom: 1px solid black;
+        }
+
+        /* Chuc nang chung cho toan bo input */
+
+        input {
+            border: none;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+
+    /* Phan tinh nang body */ 
+        .Main-center {
+            height: 100vh;
+        }
+
+        /* Chuc nang toan bo cho h3 */
+
+        h3 {
+            color: white;
+            padding-left: 20px;
+        }
+
+        /* Chinh rieng cho phan dang nhap bang gg */
+
+        .linkgg {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgb(158, 154, 154);
+            display: block;
+            border-radius: 10px;
+            width: 60%;
+            background-color: red;
+             text-decoration: none;
+            color: white;
+            position: relative;
+            left: 40px;
+            margin: 0 auto;
+        }
+
+        /* Chinh rieng phan dang nhap cho fb */
+
+        .linkfb {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgb(158, 154, 154);
+            border-radius: 10px;
+            width: 50%;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 40px;
+            margin: 0 auto;
+        }
+
+
+        /* Chinh cho phan o dang nhap */
+
+        .Login-to-index {
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: x-large;
+            border: 1px solid black;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            background-color: yellow;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 20px;
+            margin: 20px auto;
+        }
+
+        button {
+            padding-top: 20px;
+            width: 95%;
+        }
+
+
+        .restart {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .restart a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #thongbao {
+            padding-left: 20px;
+        }
+
+
+/* Cac tinh nang phan body */
+
+
+/* Cac tinh nang cua phan footer */
+    /* phan chung cua footer */    
+        .footer {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .nameshop, .policies, .information {
+            padding-left: 60px;
+            padding-top: 40px;
+            flex: 1;
+            min-width: 250px;
+        }
+    /* Logo cua shop */
+        .nameshop img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }    
+    /* Policies */
+        .policies ul {
+            list-style: none;
+            position: relative;
+            left: -20px;
+        }
+
+        .policies a {
+            color: black;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .policies li:hover {
+            overflow: hidden;
+            transform: scale(1.1);
+            color: black;
+            text-decoration: underline;
+        }
+
+        .policies li {
+            padding-top: 20px;
+        }
+    /* Information */    
+        .information ul {
+            list-style: none;
+        }
+
+        .information a {
+            text-decoration: none;
+            color: black;
+            transition: 0.3s ease;
+        }
+
+        .information li:hover {
+            overflow: hidden;
+            transform: scale(1.1);
+            color: black;
+            text-decoration: underline;
+
+        }
+
+        .information li {
+            padding-top: 20px;
+        }
+/* Cac tinh nang cua phan footer */

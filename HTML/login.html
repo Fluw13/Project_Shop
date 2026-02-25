@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Use Login>
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <script src="../JS/login.js"></script>
+    <script src="../JS/index.js"></script>
+    <div class="container">
+        <header>
+            <div class="Logo">
+                <a href="/index.html"><img src="../IMG/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+            <ul >
+                <li class="item"><a href="/index.html">Home</a></li>
+                <li class="shop">
+                    <a href="#">Shop</a>
+                    <ul class="chil-shop">
+                        <li class="item"><a href="/HTML/t-shirt.html">T-Shirt</a></li>
+                        <li class="item"><a href="#">Sneaker</a></li>
+                        <li class="item"><a href="#">Accessory</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">New Arrivals</a></li>
+                <li class="item"><a href="#">News</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+            </ul>
+            </div>
+            <div class="search-login-translan">
+                <ul>
+                    <li class="logo-search"><a href="#"><img src="../IMG/logo-search.png" alt=""></a></li>
+                    <li class="logo-giohang"><a href="#"><img src="../IMG/logo-giohang.png" alt=""></a></li>
+                    <li class="logo-login"><a href="../HTML/login.html">Đăng Nhập/Login</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="Main-center">
+        <form action="../index.html" onsubmit="return testEmail()">
+            <table>
+                <tr>
+                    <td colspan="2" class="login">
+                        <h1>Đăng Nhập</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Email: </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="inputt">
+                        <input id="email" placeholder="Nhập Email...">
+                        <p id="thongbao" style="color: red;"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Mật Khẩu: </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="inputt">
+                        <input id="password" type="password" placeholder="Nhập Mật Khẩu...">
+                        <span id = "eye" onclick="togglePassword()">👁</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="login">
+                        <h3>Quên Mật Khẩu? Nhấn Vào <a href="../HTML/reset_pass.html">Đây</a></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="Login-to-index">
+                            Đăng Nhập
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="login">
+                        <h3>Bạn Chưa Có Tài Khoản <a href="../HTML/register.html">Đăng Ký Tại Đây</a></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="linkgg">G Google</a>
+                    </td>
+                    <td>
+                        <a href="#" class="linkfb">F Facebook</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="nameshop">
+                    <div><img src="../IMG/logo.png" alt=""></div>
+                </div>
+                <div class="policies">
+                    <ul>
+                        <div><h1>Policies</h1></div>
+                        <li class="item"><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li class="item"><a href="#">Thông Tin Và Điều Kiện Giao Dịch Chung</a></li>
+                        <li class="item"><a href="#">Chính Sách Bảo Hành</a></li>
+                        <li class="item"><a href="#">Chính Sách Vận Chuyển, Giao Nhận</a></li>
+                        <li class="item"><a href="#">Chính Sách Thanh Toán</a></li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <ul>
+                        <div><h1>Information</h1></div>
+                        <li class="item"><a href="#">Hộ Kinh Doanh Fluw</a></li>
+                        <li class="item"><a href="#">Địa Chỉ: 6767 vuadanvuaxau</a></li>
+                        <li class="item"><a href="#">Email: conglongdaichuadaidakhai</a></li>
+                        <li class="item"><a href="#">Hotline: 09005509</a></li>
+                        <li class="item"><a href="#">Website: http://Fluw.vn/</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>
