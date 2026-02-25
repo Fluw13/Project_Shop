@@ -260,33 +260,6 @@
     /* Thanh phan cua cac san pham */
 
 
-    /* Phan xem them cac san pham khac */
-        .all {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .all a {
-            color: white;
-            background-color: red;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: large;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            display: inline-block;
-        }
-
-        .all a:hover {
-        color: red;
-        background-color: white;
-        border: 1px solid red;
-        }
-    /* Phan xem them cac san pham khac */
-
-    
 /* Cac tinh nang phan body */ 
 
 
