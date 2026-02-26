@@ -6,7 +6,7 @@
         }
 
         .container {
-            min-height: 100vh;
+            min-height: max-content;
             min-width: max-content;
             width: 100%;
             margin: 0 auto;
@@ -54,7 +54,8 @@
     /* Mau nen cho web */    
         body {
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
+            background-attachment: fixed;
             background: linear-gradient( -45deg,
                     #ff9a9e,
                     #fad0c4,
