@@ -34,7 +34,24 @@
             border-radius:50px 50px 0 0;
         }
 
-    
+    /* View port for PC */
+        .product {
+            width: 23%;
+        }
+
+    /* View port for table */
+        @media (max-width: 1024px) {
+            .product {
+                width: 45%;
+            }
+        }
+
+    /* View port for mobile */
+        @media (max-width: 600px) {
+            .product {
+                width: 100%;
+            }
+        }
     /* Mau nen cho web */    
         body {
             margin: 0;
