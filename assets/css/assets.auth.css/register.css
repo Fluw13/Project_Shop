@@ -6,7 +6,7 @@
         }
 
         .container {
-            min-height: 100vh;
+            height: auto;
             min-width: max-content;
             width: 100%;
             margin: 0 auto;
@@ -33,7 +33,7 @@
             border-radius:50px 50px 0 0;
         }
 
-    /* View port for PC */
+    /*View port for PC */
         .product {
             width: 23%;
         }
@@ -50,8 +50,9 @@
             .product {
                 width: 100%;
             }
-        }
-    /* Mau nen cho web */    
+        }        
+
+    /* Mau nen cho web */
         body {
             margin: 0;
             height: 100vh;
@@ -202,7 +203,9 @@
 /* Cac tinh nang phan head */
 
 
+
 /* Cac tinh nang phan body */
+
 
     /* Phan tinh nang table */
         table {
@@ -229,8 +232,8 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-    
-    /* Chu cai tieu de && phan dang nhap*/    
+
+        /* Chu cai tieu de && phan dang nhap*/   
 
         .login {
             text-align: center;
@@ -260,18 +263,36 @@
            padding-bottom: 5px;
            background-color: rgb(255, 255, 255, 0);
            border-bottom: 1px solid black;
+           margin-top: 10px;
+           margin-bottom: 10px;
         }
+
+        /* input cho viec nhap mk */
+
+        .inputt-for-pass {
+            padding-left: 20px;
+        }
+
+       .inputt-for-pass input{
+           border: none;
+           width: 95%;
+           height: 60%;
+           color: rgb(0, 0, 0);
+           font-size: large;
+           padding-left: 5px;
+           padding-top: 5px;
+           padding-bottom: 5px;
+           background-color: rgb(255, 255, 255, 0);
+           border-bottom: 1px solid black;
+           margin-top: 10px;
+           margin-bottom: 10px;
+        }
+
+        /* Chuc nang chung cho toan bo input */
 
         input {
             border: none;
             outline: none;
-            transition: 0.3s ease;
-        }
-
-        /* id dung de su dung js */
-
-        #eye {
-            cursor: pointer;
             transition: 0.3s ease;
         }
 
@@ -280,7 +301,7 @@
             height: 100vh;
         }
 
-        /* chinh toan bo chu h3 */
+        /* Chuc nang toan bo cho h3 */
 
         h3 {
             color: white;
@@ -298,11 +319,11 @@
             border-radius: 10px;
             width: 60%;
             background-color: red;
-             text-decoration: none;
+            text-decoration: none;
             color: white;
             position: relative;
             left: 40px;
-            margin: 0 auto;
+             margin: 0 auto;
         }
 
         /* Chinh rieng phan dang nhap cho fb */
@@ -313,13 +334,13 @@
             padding: 10px;
             border: 1px solid rgb(158, 154, 154);
             border-radius: 10px;
-            width: 50%;
+            width: 60%;
             background-color: blue;
             color: white;
             text-decoration: none;
             position: relative;
             right: 40px;
-            margin: 0 auto;
+             margin: 0 auto;
         }
 
         /* hover cho gg va fb */
@@ -332,6 +353,7 @@
             background-color: white;
             color: red;
         }
+
 
         /* Chinh cho phan o dang nhap */
 
@@ -346,13 +368,12 @@
             padding-top: 10px;
             padding-bottom: 10px;
             border-radius: 20px;
-            background-color: yellow;
+            background-color: rgb(255, 255, 255);
             cursor: pointer;
             transition: 0.3s ease;
             margin-top: 20px;
             margin: 20px auto;
         }
-
 
 /* Cac tinh nang phan body */
 
