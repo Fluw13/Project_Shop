@@ -6,9 +6,10 @@
         }
 
         .container {
-            min-height: max-content;
+            min-height: 100vh;
             min-width: max-content;
             width: 100%;
+            height: auto;
             margin: 0 auto;
         }
 
