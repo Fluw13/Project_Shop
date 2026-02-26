@@ -6,14 +6,14 @@
         }
 
         .container {
-            height: auto;
+            min-height: 100vh;
             min-width: max-content;
             width: 100%;
             margin: 0 auto;
         }
 
         header {
-            height: 170px;
+            height: 150px;
             width: 100%;
             min-width: 100%;
             display: flex;
@@ -96,11 +96,11 @@
         .menu ul{
             display: flex;
             list-style: none;
-            padding: 50px 100px;
+            padding: 50px 50px;
         }
 
         .menu li {
-            padding: 10px;
+            padding: 15px;
             margin: 0 30px;
         }
 
@@ -118,13 +118,13 @@
             border-radius: 10px;
         }
 
+
         .menu li {
             display: block;
         }
 
-    /* Phan con cua class = "menu" */
-
-         .chil-shop li {
+    /* Cac con cua menu */    
+        .chil-shop li {
             margin: 0;
             padding: 10px;
             background-color: white;
@@ -154,7 +154,7 @@
             position: relative;
         }
 
-        .shop:hover .chil-shop {
+        .shop:hover .chil-shop{
             visibility: visible;
             opacity: 1;
             border-radius: 10px;
@@ -201,7 +201,6 @@
             padding: 10px;
         }
 /* Cac tinh nang phan head */
-
 
 
 /* Cac tinh nang phan body */
@@ -401,7 +400,7 @@
         }
 
         .nameshop, .policies, .information {
-            padding-left: 60px;
+            padding-left: 100px;
             padding-top: 40px;
             flex: 1;
             min-width: 250px;
@@ -415,8 +414,6 @@
     /* Policies */
         .policies ul {
             list-style: none;
-            position: relative;
-            left: -20px;
         }
 
         .policies a {
