@@ -3,33 +3,34 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
 
         .container {
             min-height: 100vh;
             background-color: red;
             width: 100%;
-            min-width: max-content;
             margin: 0 auto;
+            overflow-x: hidden;
         }
 
         header {
-            height: 150px;
+            min-height: 5vh;
+            height: auto;
             width: 100%;
-            min-width: 100%;
-            display: flex;
+            display: grid;
             background-color: #f2f2f2;
             border-radius: 0 0 50px 50px;
         }
 
         .Main-center {
             width: 95%;
-            height: 70%;
+            height: auto;
             margin: 0 auto;
         }
 
         footer {
-            height: 20%;
+            height: auto;
             background-color: #f4f0f0;
             border-radius:50px 50px 0 0;
         }
@@ -56,16 +57,36 @@
 
 
 /* Cac tinh nang phan head */
+
+        .head {
+            display: grid;
+            grid-template-columns: 0.5fr 5fr 1fr;
+            align-items: center;
+            width: 100%;
+            padding: 0 2vw;
+        }
+
+        .head > .Logo {
+            text-align: left;
+        }
+
+        .head > .menu {
+            text-align: center;
+        }
+
+        .head > .search-login-translan {
+            text-align: right;
+        }
     /* Logo phan dau head " vi tri ben trai tren cung " */
+
+
         .Logo a {
             text-decoration: none;
         }
 
         .Logo img{
-            position: relative;
-            top: -10%;
-            height: 180px;
-            width: 200px;
+            width: 12vw; 
+            height: auto;
             border-radius: 20px;
         }
 
@@ -77,18 +98,18 @@
         .menu ul{
             display: flex;
             list-style: none;
-            padding: 50px 50px;
+            padding: 1.5vw 0;
         }
 
         .menu li {
-            padding: 15px;
-            margin: 0 30px;
+            padding: 1vw;
+            margin: 0 3vw;
         }
 
         .menu a {
             text-decoration: none;
             color: black;
-            font-size: x-large;
+            font-size: 1.5vw;
             display: block;
             
         }
@@ -146,11 +167,10 @@
             list-style: none;
             display: flex;
             transition: 0.3s ease;
-            padding: 30px 0;
         }
 
         .search-login-translan li {
-            margin: 20px;
+            margin: 1.2vw;
         }
 
         .search-login-translan li:hover {
@@ -161,47 +181,35 @@
             text-decoration: none;
         }
 
-        .logo-search img, .logo-giohang img{
-            width: 40px;
-            height: 40px;
+        .logo-search img, .logo-giohang img, .logo-login img{
+            width: 2.5vw;
+            height: auto;
         }
 
-        .logo-search img{
-            padding-top: 5px;
+        .logo-giohang img {
+            padding-top: 0.3vw;
         }
 
-        .logo-login a{
-            color: black;
-            font-size: large;
+        .logo-search img    {
+            padding-top: 0.4vw;
         }
 
-        .logo-login {
-            padding-top: 10px;
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 10px;
+        .logo-login img {
+            padding-top: 0.4vw;
         }
+
+
+
+
 /* Cac tinh nang phan head */
 
 
 /* Cac tinh nang phan body */
-    /* Phan table */
-        table {
-            background-color: white;
-            border-radius: 10px;
-            margin: 20px auto;
-            width: 100%;
-        }
-
-        td {
-            padding: 10px ;
-        }
-    /* Phan table */
-
 
     /* Phan Logo cua moi san pham/Product */
         .main-logo {
             width: 100%;
+            padding-bottom: 30px;
         }
 
         .main-logo img{
@@ -211,7 +219,22 @@
         }
     /* Phan Logo cua moi san pham/Product */ 
     
-    
+    .list-product {
+        background-color: white;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+    .show {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
     /* Tieu de cua moi muc san pham */ 
         .Title-logo {
@@ -219,26 +242,25 @@
         }
     /* Tieu de cua moi muc san pham */
 
-
-
     /* Thanh phan cua cac san pham */
     .product {
             text-decoration: none;
             display: block;
             transition: 0.3s ease;
-            padding: 10px;
             background-color: #fffafa;
             border: 2px solid red;
             border-radius: 20px;
-            width: 250px;
-            height: 325px;
+            width: 100%;
+            height: 350px;
         }
 
         .product img {
             border-radius: 20px;
-            width: 225px;
+            width: 90%;
             height: 225px;
-
+            display: block;
+            margin: 15px auto 10px;
+            object-fit: cover;
         }
 
 
@@ -260,27 +282,28 @@
     /* Thanh phan cua cac san pham */
 
 
-/* Cac tinh nang phan body */ 
+    
+/* Cac tinh nang phan body */   
 
 
 /* Cac tinh nang cua phan footer */
     /* phan chung cua footer */    
         .footer {
-            display: flex;
             margin: 0 auto;
             justify-content: center;
+            display: grid;
+            grid-template-columns: 1.25fr 1.5fr 1fr;
         }
 
         .nameshop, .policies, .information {
-            padding-left: 100px;
-            padding-top: 40px;
+            padding-top: 3vw;
             flex: 1;
             min-width: 250px;
         }
     /* Logo cua shop */
         .nameshop img{
-            width: 300px;
-            height: 300px;
+            width: 15vw;
+            height: auto;
             border-radius: 20px;
         }    
     /* Policies */
@@ -292,17 +315,18 @@
             color: black;
             text-decoration: none;
             transition: 0.3s ease;
+            font-size: 1vw;
         }
 
         .policies li:hover {
             overflow: hidden;
-            transform: scale(1.1);
             color: black;
             text-decoration: underline;
         }
 
         .policies li {
-            padding-top: 20px;
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;
         }
     /* Information */    
         .information ul {
@@ -313,19 +337,23 @@
             text-decoration: none;
             color: black;
             transition: 0.3s ease;
+            font-size: 1vw;
         }
 
         .information li:hover {
             overflow: hidden;
-            transform: scale(1.1);
             color: black;
             text-decoration: underline;
 
         }
 
         .information li {
-            padding-top: 20px;
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;
+        }
+
+        .title-footer {
+            padding-bottom: 1vw;
+            font-size: 3vw;
         }
 /* Cac tinh nang cua phan footer */
-
-
