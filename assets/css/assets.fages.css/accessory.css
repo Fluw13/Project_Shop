@@ -14,6 +14,7 @@
         .container-fluid{
             min-height: 100vh;
             background-color: black;
+            min-width: max-content;
             width: 100%;
             overflow-x: hidden;
         }
@@ -199,7 +200,6 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 20px;
-        
         padding-top: 30px;
         padding-bottom: 30px;
     }
