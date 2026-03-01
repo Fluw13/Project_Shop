@@ -6,33 +6,34 @@
             font-family: 'Arial', sans-serif;
         }
 
-        .container {
+        body.no-scroll {
+            overflow: hidden; /* Triệt tiêu thanh cuộn */
+            height: 100vh;    /* Cố định chiều cao màn hình */
+        }
+
+        .container-fluid{
             min-height: 100vh;
-            background-color: red;
+            background-color: black;
             width: 100%;
-            margin: 0 auto;
             overflow-x: hidden;
         }
 
         header {
-            min-height: 5vh;
+            min-height: 10vh;
             height: auto;
             width: 100%;
             display: grid;
-            background-color: #f2f2f2;
-            border-radius: 0 0 50px 50px;
         }
 
         .Main-center {
-            width: 95%;
+            width: 100%;
             height: auto;
             margin: 0 auto;
         }
 
         footer {
+            width: 100%;
             height: auto;
-            background-color: #f4f0f0;
-            border-radius:50px 50px 0 0;
         }
 
     /*View port for PC */
@@ -57,151 +58,118 @@
 
 
 /* Cac tinh nang phan head */
-
+            
         .head {
-            display: grid;
-            grid-template-columns: 0.5fr 5fr 1fr;
-            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            position: relative; 
+            padding: 0 30px; 
             width: 100%;
-            padding: 0 2vw;
         }
 
-        .head > .Logo {
-            text-align: left;
-        }
-
-        .head > .menu {
-            text-align: center;
-        }
-
-        .head > .search-login-translan {
-            text-align: right;
-        }
-    /* Logo phan dau head " vi tri ben trai tren cung " */
-
-
-        .Logo a {
-            text-decoration: none;
-        }
-
-        .Logo img{
-            width: 12vw; 
-            height: auto;
-            border-radius: 20px;
-        }
 
         .Logo {
-            justify-content: center;
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%); 
         }
 
-    /* Menu phan dau head " vi tri o giua tren cung " */
-        .menu ul{
+        .Logo img {
+            width: 12vw; 
+            height: auto;   
+        }
+
+        .menu {
+            padding-top: 20px;
+        }
+
+        .tab {
             display: flex;
-            list-style: none;
-            padding: 1.5vw 0;
+            align-items: center;
+            gap: 30px; 
         }
 
-        .menu li {
-            padding: 1vw;
-            margin: 0 3vw;
+        .search-login-translan ul {
+            display: flex;
+            list-style: none; 
+            gap: 15px; 
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 140px;
+            top: 34px;
+            gap: 50px;
         }
 
-        .menu a {
+        .open-btn {
+            border: none;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .part-menu {
+            background-color: white;
+            position: absolute;
+            transform: translateX(200%);
+            padding-left: 1vw;
+            min-width: 20vw;
+            z-index: 999;
+            transition: 0.6s ease;
+            right: 0;
+            top: -0.01vw;
+            height: 100vh;
+            border-left: 1px solid black;
+            overflow-y: auto;
+        }
+
+
+
+        .part-menu div {
+            margin-bottom: 40px;
+        }
+
+
+        .part-menu a {
+            display: block;
             text-decoration: none;
             color: black;
             font-size: 1.5vw;
+        }
+
+        .part-menu a:hover {
+            cursor: pointer;
+        }
+
+        .part-menu.active {
+            transform: translateX(0);
+        }
+
+        .text-end {
+            padding-top: 0.5vw;
+            padding-right: 1vw;
+            border: none;
+            background-color: white;
+            padding-left: 16vw;
+        }
+
+        .overlay {
+            position: fixed;
+            backdrop-filter: blur(8px);
+            z-index: 998;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .overlay.active {
             display: block;
+        }
+
+
             
-        }
 
-        .menu li:not(.chil-shop li):hover {
-            background-color: white;
-            box-shadow: 0 2.5px 5px black;
-            border-radius: 10px;
-        }
-
-
-        .menu li {
-            display: block;
-        }
-
-    /* Cac con cua menu */    
-        .chil-shop li {
-            margin: 0;
-            padding: 10px;
-            background-color: white;
-        }
-
-        .chil-shop li:hover {
-            background-color: white;
-            box-shadow: 5px 10px 20px black;
-            border-radius: 10px;
-            transform: scale(1.1);
-        }
-
-        .chil-shop {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            position: absolute;
-            list-style: none;
-            visibility: hidden;
-            transition: 0.3s ease;
-            opacity: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .shop {
-            position: relative;
-        }
-
-        .shop:hover .chil-shop{
-            visibility: visible;
-            opacity: 1;
-            border-radius: 10px;
-        }
-
-    /* Phan Logo phan dau head " vi tri o ben phai tren cung " */
-        .search-login-translan ul {
-            list-style: none;
-            display: flex;
-            transition: 0.3s ease;
-        }
-
-        .search-login-translan li {
-            margin: 1.2vw;
-        }
-
-        .search-login-translan li:hover {
-            transform: scale(1.1);
-        }
-
-        .search-login-translan a {
-            text-decoration: none;
-        }
-
-        .logo-search img, .logo-giohang img, .logo-login img{
-            width: 2.5vw;
-            height: auto;
-        }
-
-        .logo-giohang img {
-            padding-top: 0.3vw;
-        }
-
-        .logo-search img    {
-            padding-top: 0.4vw;
-        }
-
-        .logo-login img {
-            padding-top: 0.4vw;
-        }
-
-
-
-
-/* Cac tinh nang phan head */
+    /* Cac tinh nang phan head */
 
 
 /* Cac tinh nang phan body */
@@ -288,6 +256,7 @@
 /* Cac tinh nang cua phan footer */
     /* phan chung cua footer */    
         .footer {
+            
             margin: 0 auto;
             justify-content: center;
             display: grid;
@@ -301,9 +270,12 @@
         }
     /* Logo cua shop */
         .nameshop img{
-            width: 15vw;
+            width: 30vw;
             height: auto;
             border-radius: 20px;
+            position:relative;
+            top: 5vw;
+            
         }    
     /* Policies */
         .policies ul {
@@ -311,7 +283,7 @@
         }
 
         .policies a {
-            color: black;
+            color: white;
             text-decoration: none;
             transition: 0.3s ease;
             font-size: 1vw;
@@ -319,7 +291,7 @@
 
         .policies li:hover {
             overflow: hidden;
-            color: black;
+            color: white;
             text-decoration: underline;
         }
 
@@ -334,14 +306,14 @@
 
         .information a {
             text-decoration: none;
-            color: black;
+            color: white;
             transition: 0.3s ease;
             font-size: 1vw;
         }
 
         .information li:hover {
             overflow: hidden;
-            color: black;
+            color: white;
             text-decoration: underline;
 
         }
@@ -354,5 +326,6 @@
         .title-footer {
             padding-bottom: 1vw;
             font-size: 3vw;
+            color: white;
         }
 /* Cac tinh nang cua phan footer */

@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluw Shop - Sneaker</title>
+    <meta web sell shirt or shoe>
+    <title>Fluw Shop - Home</title>
     <link rel="stylesheet" href="../../assets/css/assets.fages.css/sneaker.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <header>
              <div class="head">
                 <div class="Logo">
-                    <a href="../../pages/shop/index.html"><img src="../../assets/img/logo-shop.img/logo.png" alt=""></a>
+                    <a href="../../pages/shop/index.html"><img src="../../assets/img/logo-shop.img/logo-main.png" alt=""></a>
                 </div>
-                <div class="menu">
-                    <ul >
-                        <li class="item"><a href="../../pages/shop/index.html">Home</a></li>
-                        <li class="shop">
-                            <a href="#">Shop</a>
-                    <ul class="chil-shop">
-                        <li class="item"><a href="../../pages/shop/t-shirt.html">T-Shirt</a></li>
-                        <li class="item"><a href="../../pages/shop/sneaker.html">Sneaker</a></li>
-                        <li class="item"><a href="../../pages/shop/accessory.html">Accessory</a></li>
-                    </ul>
-                        </li>
-                        <li class="item"><a href="#">New Arrivals</a></li>
-                        <li class="item"><a href="#">News</a></li>
-                        <li class="item"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+                <div class="tab">
                 <div class="search-login-translan">
                     <ul>
-                        <li class="logo-search"><a href="#"><img src="../../assets/img/assets.img/logo-search.png" alt=""></a></li>
-                        <li class="logo-giohang"><a href="#"><img src="../../assets/img/assets.img/logo-giohang.png" alt=""></a></li>
-                        <li class="logo-login"><a href="./pages/auth/login.html"><img src="../../assets/img/assets.img/logo-login.png" alt=""></a></li>
+                        <li class="logo-search"><a href="#"><i class="bi bi-search text-white"></i></a></li>
+                        <li class="logo-giohang"><a href="#"><i class="bi bi-cart text-white"></i></a></li>
+                        <li class="logo-login"><a href="../../pages/auth/login.html"><i class="bi bi-person-circle text-white"></i></a></li>
                     </ul>
+                </div>
+                <div class="menu">
+                        <button class="open-btn" id="open-btn">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                        <div class="part-menu" id="part-menu">
+                            <button class="text-end" id="text-end"><i class="bi bi-x-circle-fill"></i></button>
+                            <div><a href="../../pages/shop/index.html">Home</a></div>
+                            <div><a href="#" class="sub-item" id="sub-item">Shop</a></div>
+                            <div><a href="#">New Arrivals</a></div>
+                            <div><a href="#">News</a></div>
+                            <div><a href="#">Contact</a></div>
+                        </div>
+                        <div class="part-menu sub-menu " id="sub-menu">
+                            <div>
+                            <button class="open-sub-btn text-end" id="open-sub-btn">
+                                <i class="bi bi-arrow-left"></i>
+                            </button>
+                                <div><a href="../../pages/shop/t-shirt.html">T-Shirt</a></div>
+                                <div><a href="../../pages/shop/sneaker.html">Sneaker</a></div>
+                                <div><a href="../../pages/shop/accessory.html">Accessory</a></div>
+                            </div>
+                        </div>
+                        <div class="overlay" id="overlay"></div>
+                </div>
                 </div>
             </div>
         </header>
@@ -220,7 +233,7 @@
         <footer>
             <div class="footer">
                 <div class="nameshop">
-                    <div><img src="../../assets/img/logo-shop.img/logo.png" alt=""></div>
+                    <div><img src="../../assets/img/logo-shop.img/logo-main.png" alt=""></div>
                 </div>
                 <div class="policies">
                     <ul>
@@ -245,5 +258,7 @@
             </div>
         </footer>
     </div>
+    <script src="../../assets/js/asset.pages.js/sneaker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

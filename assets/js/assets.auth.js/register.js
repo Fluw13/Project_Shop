@@ -30,10 +30,17 @@ function register() {
         check = false;
     }
 
-    if (ema.trim() === "" || !isNaN(ema) || !ema.includes("@") || !ema.includes(".")) {
-        tb3.innerText = "Vui long nhap lai";
+    if (ema.trim() === "") {
+        tb3.innerText = "Vui lòng nhập email";
+        check = false;
+    } else if ((!ema.includes('@') || !ema.includes('.')) && ema != "") {
+        tb3.innerText = "Vui lòng nhập lại email!";
+        check = false;
+    } else if (!isNaN(ema)) {
+        tb3.innerText = "Vui lòng nhập lại email!";
         check = false;
     }
+
 
     if (sdt.trim() === "" || isNaN(sdt)) {
         tb4.innerText = "Vui long nhap lai";
@@ -46,8 +53,63 @@ function register() {
     }
 
     if (check) {
-        window.location.href = "../index.html";
+        window.location.href = "../../pages/shop/index.html";
     }
 
     return false;
 }
+
+
+function togglePassword() {
+    let pass = document.getElementById("pass");
+    let eye = document.getElementById("eye");
+
+    if (pass.type === "password") {
+        pass.type = "text";
+        eye.textContent = "🙈";
+    } else {
+        pass.type = "password";
+        eye.textContent = "👁";
+    }
+}
+
+
+let open = document.getElementById("open-btn");
+let opensub = document.getElementById("open-sub-btn");
+let part = document.getElementById("part-menu");
+let submenu = document.getElementById("sub-menu");
+let subitem = document.getElementById("sub-item");
+let over = document.getElementById("overlay");
+let text = document.getElementById("text-end");
+
+open.onclick = function() {
+    part.classList.add('active');
+    over.classList.add('active');
+    document.body.classList.add('no-scroll');
+}
+
+subitem.onclick = function() {
+    submenu.classList.add('active');
+    over.classList.add('active');
+    document.body.classList.add('no-scroll');
+}
+
+opensub.onclick = function() {
+    submenu.classList.remove('active');
+    
+}
+
+function closeEverything() {
+    part.classList.remove('active');
+    submenu.classList.remove('active');
+    over.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+}
+
+text.onclick = closeEverything;
+over.onclick = closeEverything
+
+
+
+
+
