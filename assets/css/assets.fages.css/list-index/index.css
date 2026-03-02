@@ -116,7 +116,7 @@
             transition: 0.6s ease;
             right: 0;
             top: 0;
-            height: 100vh;
+            height: 100%;
             border-left: 1px solid black;
             overflow-y: auto;
         }
@@ -132,9 +132,7 @@
             font-size: 1.5vw;
         }
 
-        .part-menu a:hover {
-            cursor: pointer;
-        }
+       
 
         .part-menu.active {
             transform: translateX(0);
@@ -170,162 +168,45 @@
 
 /* Cac tinh nang phan body */
 
-    /* body - box toàn bộ phần reset pass */    
-        .box-log {
-            margin: 0 auto;
-            padding-top: 5vw;
-            display: block;
-            justify-content: center;
-            width: 60%;
+    /* Logo chính của index */
+        .logo-body img {
+            margin-top: 1vw;
+            width: 100%;
+            height: auto;
         }
 
-    /* Tiêu đề từng phần */
-        .tilte-aa {
-            color: white;
-            text-align: center;
+    /* các ảnh đại diện cho từng mặt hàng */     
+        .information-t-shirt img, .information-sneaker img, .information-accessory img {
+            width: 100%;
+            height: auto;
         }
 
-    /* Tiêu đề chính phần tên chính của trang - link */
-        .login {
-            text-align: center;
+        .information-t-shirt, .information-sneaker, .information-accessory{
             color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }  
+        }
+
+        .information-sneaker, .information-t-shirt, .information-accessory{
+            position: relative; 
+            width: 100%;
+            overflow: hidden;   
+        }   
     
-        .login a {
-            color: blue;
-        }
-
-    /* Tieu de gui emai */
-        .letter-for-email {
-            text-align: center;
+    /* Chữ phía dưới của các ảnh */
+        .name-logo {
+            position: absolute;
+            bottom: 0vw; 
             color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            width: 60%;
-            margin: 0 auto;
-        }
-
-
-    /* Phan nhap cac thong tin input */
-        .inputt {
-            padding-left: 20px;
-        }
-        
-        .inputt input{
-           border: none;
-           width: 100%;
-           height: 60%;
-           color: white;
-           font-size: 1.1vw;
-           padding-left: 5px;
-           padding-top: 5px;
-           padding-bottom: 5px;
-           background-color: rgb(255, 255, 255, 0);
-           border-bottom: 1px solid white;
-        }
-
-        input {
-            border: none;
-            outline: none;
-            transition: 0.3s ease;
-        }
-
-
-    /* body bao quát toàn bộ thân web */ 
-        .Main-center {
-            height: 100vh;
-        }
-
-        /* Chinh rieng cho phan dang nhap bang gg */
-        .linkgg {
-            display: block;
+            width: 100%;
+            font-size: 0.9vw;
             text-align: center;
-            padding: 10px;
-            border: 1px solid rgb(158, 154, 154);
-            display: block;
-            border-radius: 10px;
-            width: 40%;
-            background-color: red;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            left: 4vw;
-            margin: 0 auto;
         }
 
-        /* Chinh rieng phan dang nhap cho fb */
-        .linkfb {
-            display: block;
-            text-align: center;
-            padding: 10px;
-            border: 1px solid rgb(158, 154, 154);
-            border-radius: 10px;
-            width: 40%;
-            background-color: blue;
-            color: white;
-            text-decoration: none;
-            position: relative;
-            right: 4vw;
-            margin: 0 auto;
+    /* Chữ phía trên của các ảnh */
+        .main-tilte {
+            font-size: 3vw;
         }
-
-        /* hover cho gg va fb */
-        .linkfb:hover{
-            background-color: white;
-            color: blue;
-        }
-
-        .linkgg:hover {
-            background-color: white;
-            color: red;
-        }
-
-        .linkgg-linkfb {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-
-        /* Chinh cho phan o dang nhap */
-        .Login-to-index {
-            display: block;
-            text-decoration: none;
-            color: black;
-            font-size: 2vw;
-            border: 1px solid black;
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-top: 0.5vw;
-            padding-bottom: 0.5vw;
-            border-radius: 20px;
-            background-color: rgb(255, 255, 255);
-            cursor: pointer;
-            transition: 0.3s ease;
-            margin-top: 2vw;
-            margin: 2vw auto;
-        }
-
-    /* Phần quay lại trang đăng nhập */
-        .restart {
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .restart a {
-            text-decoration: none;
-            color: white;
-        }
-
-    /* Phần thông báo */
-        #thongbao {
-            padding-left: 20px;
-        }
-
-
-/* Cac tinh nang phan body */
+    
+/* Cac tinh nang phan body */   
 
 
 /* Cac tinh nang cua phan footer */

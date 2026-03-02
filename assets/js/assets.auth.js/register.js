@@ -76,9 +76,22 @@ function togglePassword() {
 
 let open = document.getElementById("open-btn");
 let opensub = document.getElementById("open-sub-btn");
-let part = document.getElementById("part-menu");
 let submenu = document.getElementById("sub-menu");
 let subitem = document.getElementById("sub-item");
+let part = document.getElementById("part-menu");
+
+let open2sub = document.getElementById("open-sub2-btn");
+let sub2menu = document.getElementById("sub2-menu");
+let sub2item = document.getElementById("sub2-item");
+
+let open3sub = document.getElementById("open-sub3-btn");
+let sub3menu = document.getElementById("sub3-menu");
+let sub3item = document.getElementById("sub3-item");
+
+let ope4sub = document.getElementById("open-sub4-btn");
+let sub4menu = document.getElementById("sub4-menu");
+let sub4item = document.getElementById("sub4-item");
+
 let over = document.getElementById("overlay");
 let text = document.getElementById("text-end");
 
@@ -96,18 +109,62 @@ subitem.onclick = function() {
 
 opensub.onclick = function() {
     submenu.classList.remove('active');
-    
+}
+
+sub2item.onclick = function() {
+    sub2menu.classList.add('active');
+    over.classList.add('active');
+    document.body.classList.add('no-scroll');
+}
+
+open2sub.onclick = function() {
+    sub2menu.classList.remove('active');
+}
+
+sub3item.onclick = function() {
+    sub3menu.classList.add('active');
+    over.classList.add('active');
+    document.body.classList.add('no-scroll');
+}
+
+open3sub.onclick = function() {
+    sub3menu.classList.remove('active');
+}
+
+sub4item.onclick = function() {
+    sub4menu.classList.add('active');
+    over.classList.add('active');
+    document.body.classList.add('no-scroll');
+}
+
+open4sub.onclick = function() {
+    sub4menu.classList.remove('active');
 }
 
 function closeEverything() {
     part.classList.remove('active');
     submenu.classList.remove('active');
+    sub2menu.classList.remove('active');
+    sub3menu.classList.remove('active');
+    sub4menu.classList.remove('active');
     over.classList.remove('active');
     document.body.classList.remove('no-scroll');
 }
 
 text.onclick = closeEverything;
 over.onclick = closeEverything
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

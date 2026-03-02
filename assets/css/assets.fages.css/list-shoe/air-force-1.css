@@ -170,162 +170,81 @@
 
 /* Cac tinh nang phan body */
 
-    /* body - box toàn bộ phần reset pass */    
-        .box-log {
-            margin: 0 auto;
-            padding-top: 5vw;
-            display: block;
-            justify-content: center;
-            width: 60%;
+    /* Logo chính của sản phẩm */
+        .main-logo {
+            width: 100%;
+            padding-bottom: 30px;
         }
 
-    /* Tiêu đề từng phần */
-        .tilte-aa {
-            color: white;
-            text-align: center;
-        }
-
-    /* Tiêu đề chính phần tên chính của trang - link */
-        .login {
-            text-align: center;
-            color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }  
+        .main-logo img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        } 
     
-        .login a {
-            color: blue;
+    /* Bao quát toàn bộ các sản phẩm và logo chính của sản phẩm*/
+        .list-product {
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 15px;
+            padding-top: 30px;
         }
 
-    /* Tieu de gui emai */
-        .letter-for-email {
-            text-align: center;
-            color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            width: 60%;
-            margin: 0 auto;
+    /* Bao quát toàn bộ ảnh sản phẩm giá tiền và tên sản phẩm */ 
+        .show {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
 
-
-    /* Phan nhap cac thong tin input */
-        .inputt {
+    /* Tên của các list sản phẩm */
+        .Title-logo {
             padding-left: 20px;
         }
-        
-        .inputt input{
-           border: none;
-           width: 100%;
-           height: 60%;
-           color: white;
-           font-size: 1.1vw;
-           padding-left: 5px;
-           padding-top: 5px;
-           padding-bottom: 5px;
-           background-color: rgb(255, 255, 255, 0);
-           border-bottom: 1px solid white;
-        }
 
-        input {
-            border: none;
-            outline: none;
+    /* hiệu ứng cho từng san pham */
+        .product {
+            text-decoration: none;
+            display: block;
             transition: 0.3s ease;
-        }
-
-
-    /* body bao quát toàn bộ thân web */ 
-        .Main-center {
-            height: 100vh;
-        }
-
-        /* Chinh rieng cho phan dang nhap bang gg */
-        .linkgg {
-            display: block;
-            text-align: center;
-            padding: 10px;
-            border: 1px solid rgb(158, 154, 154);
-            display: block;
-            border-radius: 10px;
-            width: 40%;
-            background-color: red;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            left: 4vw;
-            margin: 0 auto;
-        }
-
-        /* Chinh rieng phan dang nhap cho fb */
-        .linkfb {
-            display: block;
-            text-align: center;
-            padding: 10px;
-            border: 1px solid rgb(158, 154, 154);
-            border-radius: 10px;
-            width: 40%;
-            background-color: blue;
-            color: white;
-            text-decoration: none;
-            position: relative;
-            right: 4vw;
-            margin: 0 auto;
-        }
-
-        /* hover cho gg va fb */
-        .linkfb:hover{
-            background-color: white;
-            color: blue;
-        }
-
-        .linkgg:hover {
-            background-color: white;
-            color: red;
-        }
-
-        .linkgg-linkfb {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-
-        /* Chinh cho phan o dang nhap */
-        .Login-to-index {
-            display: block;
-            text-decoration: none;
-            color: black;
-            font-size: 2vw;
-            border: 1px solid black;
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-top: 0.5vw;
-            padding-bottom: 0.5vw;
             border-radius: 20px;
-            background-color: rgb(255, 255, 255);
-            cursor: pointer;
-            transition: 0.3s ease;
-            margin-top: 2vw;
-            margin: 2vw auto;
+            width: 100%;
+            height: 350px;
         }
 
-    /* Phần quay lại trang đăng nhập */
-        .restart {
+        .product img {
+            border-radius: 20px;
+            width: 90%;
+            height: 225px;
+            display: block;
+            margin: 15px auto 10px;
+            object-fit: cover;
+        }
+
+    /* Tên các sản phẩm */
+        .title-product {
+            text-align: center;
+            padding-top: 10px; 
+            color: black;
+        }
+
+    /* Giá tiền các sản phẩm */
+        .price-product {
             text-align: center;
             padding-top: 10px;
-            padding-bottom: 10px;
+            color: black;
         }
 
-        .restart a {
-            text-decoration: none;
-            color: white;
-        }
+    /* hiệu ứng khi chọn vào sản phẩm */
+        .product:hover {
+            transform:translateY(-10px)
+        }    
+    /* Thanh phan cua cac san pham */
 
-    /* Phần thông báo */
-        #thongbao {
-            padding-left: 20px;
-        }
-
-
-/* Cac tinh nang phan body */
+/* Cac tinh nang phan body */   
 
 
 /* Cac tinh nang cua phan footer */
