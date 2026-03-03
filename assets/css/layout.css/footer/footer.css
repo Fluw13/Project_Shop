@@ -1,0 +1,83 @@
+footer {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Cac tinh nang cua phan footer */
+    /* phan chung cua footer */    
+        .footer {
+            
+            margin: 0 auto;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1.25fr 1.5fr 1fr;
+        }
+
+    /* chỉnh sửa cho các tiêu đề footer */
+        .nameshop, .policies, .information {
+            padding-top: 3vw;
+            flex: 1;
+            min-width: 250px;
+        }
+    /* Logo cua shop */
+        .nameshop img{
+            width: 30vw;
+            height: auto;
+            border-radius: 20px;
+            position:relative;
+            top: 5vw;
+            
+        }    
+    /* Policies */
+        .policies ul {
+            list-style: none;
+        }
+
+        .policies a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+            font-size: 1vw;
+        }
+
+        .policies li:hover {
+            overflow: hidden;
+            color: white;
+            text-decoration: underline;
+        }
+
+        .policies li {
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;
+        }
+    /* Information */    
+        .information ul {
+            list-style: none;
+        }
+
+        .information a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease;
+            font-size: 1vw;
+        }
+
+        .information li:hover {
+            overflow: hidden;
+            color: white;
+            text-decoration: underline;
+
+        }
+
+        .information li {
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;
+        }
+
+        /* Chữ của các footer */
+        .title-footer {
+            padding-bottom: 1vw;
+            font-size: 3vw;
+            color: white;
+        }
+/* Cac tinh nang cua phan footer */

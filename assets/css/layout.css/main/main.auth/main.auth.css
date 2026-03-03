@@ -1,0 +1,112 @@
+/* body - box toàn bộ phần login */ 
+        .box-log {
+            margin: 0 auto;
+            padding-top: 5vw;
+            display: block;
+            justify-content: center;
+            width: 60%;
+        }
+
+         /* Tiêu đề từng phần */
+        .tilte-aa {
+            color: white;
+            text-align: center;
+        }
+
+    /* Tiêu đề chính phần tên chính của trang - link */
+        .login {
+            text-align: center;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }  
+    
+        .login a {
+            color: blue;
+        }
+
+        .inputt {
+            padding-left: 20px;
+        }
+        
+        .inputt input{
+           border: none;
+           width: 95%;
+           height: 60%;
+           color: white;
+           font-size: 1.1vw;
+           padding-left: 5px;
+           padding-top: 5px;
+           padding-bottom: 5px;
+           background-color: rgb(255, 255, 255, 0);
+           border-bottom: 1px solid white;
+        }
+
+         /* Chinh rieng cho phan dang nhap bang gg */
+        .linkgg {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgb(158, 154, 154);
+            display: block;
+            border-radius: 10px;
+            width: 40%;
+            background-color: red;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            left: 4vw;
+            margin: 0 auto;
+        }
+
+        /* Chinh rieng phan dang nhap cho fb */
+        .linkfb {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgb(158, 154, 154);
+            border-radius: 10px;
+            width: 40%;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 4vw;
+            margin: 0 auto;
+        }
+
+        /* hover cho gg va fb */
+        .linkfb:hover{
+            background-color: white;
+            color: blue;
+        }
+
+        .linkgg:hover {
+            background-color: white;
+            color: red;
+        }
+
+        .linkgg-linkfb {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+         /* Chinh cho phan o dang nhap */
+        .Login-to-index {
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 2vw;
+            border: 1px solid black;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 2vw;
+            margin: 2vw auto;
+        }

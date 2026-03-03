@@ -1,0 +1,32 @@
+/* Yeu to chinh */     
+        * { 
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Thanh chống cuộn cho thanh menu */
+        body.no-scroll {
+            overflow: hidden; /* Triệt tiêu thanh cuộn */
+            height: 100vh;    /* Cố định chiều cao màn hình */
+        }
+        
+         /*View port for PC */
+        .product {
+            width: 23%;
+        }
+
+    /* View port for table */
+        @media (max-width: 1024px) {
+            .product {
+                width: 45%;
+            }
+        }
+
+    /* View port for mobile */
+        @media (max-width: 600px) {
+            .product {
+                width: 100%;
+            }
+        }

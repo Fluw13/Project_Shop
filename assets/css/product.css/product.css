@@ -1,0 +1,78 @@
+
+/* Cac tinh nang phan body */
+
+    /* Logo chính của sản phẩm */
+        .main-logo {
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
+        .main-logo img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        } 
+    
+    /* Bao quát toàn bộ các sản phẩm và logo chính của sản phẩm*/
+        .list-product {
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 15px;
+            padding-top: 30px;
+        }
+
+    /* Bao quát toàn bộ ảnh sản phẩm giá tiền và tên sản phẩm */ 
+        .show {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+    /* Tên của các list sản phẩm */
+        .Title-logo {
+            padding-left: 20px;
+        }
+
+    /* hiệu ứng cho từng san pham */
+        .product {
+            text-decoration: none;
+            display: block;
+            transition: 0.3s ease;
+            border-radius: 20px;
+            width: 100%;
+            height: 350px;
+        }
+
+        .product img {
+            border-radius: 20px;
+            width: 90%;
+            height: 225px;
+            display: block;
+            margin: 15px auto 10px;
+            object-fit: cover;
+        }
+
+    /* Tên các sản phẩm */
+        .title-product {
+            text-align: center;
+            padding-top: 10px; 
+            color: black;
+        }
+
+    /* Giá tiền các sản phẩm */
+        .price-product {
+            text-align: center;
+            padding-top: 10px;
+            color: black;
+        }
+
+    /* hiệu ứng khi chọn vào sản phẩm */
+        .product:hover {
+            transform:translateY(-10px)
+        }    
+    /* Thanh phan cua cac san pham */
+
+/* Cac tinh nang phan body */   

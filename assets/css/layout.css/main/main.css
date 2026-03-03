@@ -1,0 +1,14 @@
+/* Body của web */
+        .container-fluid{
+            min-height: 100vh;
+            background-color: black;
+            min-width: max-content;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+.Main-center {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
