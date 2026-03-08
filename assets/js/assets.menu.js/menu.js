@@ -1,79 +1,48 @@
-let open = document.getElementById("open-btn");
-let opensub = document.getElementById("open-sub-btn");
-let submenu = document.getElementById("sub-menu");
-let subitem = document.getElementById("sub-item");
-let part = document.getElementById("part-menu");
+function initmenu() {
+    // 1. Khai báo các biến dùng chung toàn cục
+    const overlay = document.getElementById("overlay");
+    const body = document.body;
 
-let open2sub = document.getElementById("open-sub2-btn");
-let sub2menu = document.getElementById("sub2-menu");
-let sub2item = document.getElementById("sub2-item");
+    // 2. Hàm mở Menu Chính
+    document.getElementById("open-btn").onclick = function() {
+        document.getElementById("part-menu").classList.add('active');
+        overlay.classList.add('active');
+        body.classList.add('no-scroll');
+    };
 
-let open3sub = document.getElementById("open-sub3-btn");
-let sub3menu = document.getElementById("sub3-menu");
-let sub3item = document.getElementById("sub3-item");
+    // 3. VÒNG LẶP MỞ SUB-MENU: Áp dụng cho mọi nút có class 'open-sub-trigger'
+    document.querySelectorAll('.open-sub-trigger').forEach(button => {
+        button.onclick = function() {
+            // Lấy tên id của menu cần mở từ thuộc tính data-target
+            const targetId = this.getAttribute('data-target'); 
+            document.getElementById(targetId).classList.add('active');
+            
+            overlay.classList.add('active');
+            body.classList.add('no-scroll');
+        };
+    });
 
-let ope4sub = document.getElementById("open-sub4-btn");
-let sub4menu = document.getElementById("sub4-menu");
-let sub4item = document.getElementById("sub4-item");
+    // 4. VÒNG LẶP ĐÓNG SUB-MENU (Nút Quay lại)
+    document.querySelectorAll('.back-sub-trigger').forEach(button => {
+        button.onclick = function() {
+            const targetId = this.getAttribute('data-target');
+            // Chỉ ẩn cái sub-menu đó đi, giữ nguyên overlay vì menu chính vẫn đang mở
+            document.getElementById(targetId).classList.remove('active');
+        };
+    });
 
-let over = document.getElementById("overlay");
-let text = document.getElementById("text-end");
+    // 5. HÀM QUÉT DỌN: Đóng TẤT CẢ mọi thứ
+    function closeEverything() {
+        // Tìm TẤT CẢ các menu (cả chính lẫn phụ) đang có class 'active' và gỡ nó ra
+        document.querySelectorAll('.part-menu.active, .sub-menu.active').forEach(menu => {
+            menu.classList.remove('active');
+        });
+        
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+    }
 
-open.onclick = function() {
-    part.classList.add('active');
-    over.classList.add('active');
-    document.body.classList.add('no-scroll');
+    // Gắn hàm quét dọn vào nút X và lớp Overlay
+    document.getElementById("text-end").onclick = closeEverything;
+    overlay.onclick = closeEverything;
 }
-
-subitem.onclick = function() {
-    submenu.classList.add('active');
-    over.classList.add('active');
-    document.body.classList.add('no-scroll');
-}
-
-opensub.onclick = function() {
-    submenu.classList.remove('active');
-}
-
-sub2item.onclick = function() {
-    sub2menu.classList.add('active');
-    over.classList.add('active');
-    document.body.classList.add('no-scroll');
-}
-
-open2sub.onclick = function() {
-    sub2menu.classList.remove('active');
-}
-
-sub3item.onclick = function() {
-    sub3menu.classList.add('active');
-    over.classList.add('active');
-    document.body.classList.add('no-scroll');
-}
-
-open3sub.onclick = function() {
-    sub3menu.classList.remove('active');
-}
-
-sub4item.onclick = function() {
-    sub4menu.classList.add('active');
-    over.classList.add('active');
-    document.body.classList.add('no-scroll');
-}
-
-open4sub.onclick = function() {
-    sub4menu.classList.remove('active');
-}
-
-function closeEverything() {
-    part.classList.remove('active');
-    submenu.classList.remove('active');
-    sub2menu.classList.remove('active');
-    sub3menu.classList.remove('active');
-    sub4menu.classList.remove('active');
-    over.classList.remove('active');
-    document.body.classList.remove('no-scroll');
-}
-
-text.onclick = closeEverything;
-over.onclick = closeEverything;

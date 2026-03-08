@@ -1,6 +1,26 @@
 
 /* Cac tinh nang phan body */
 
+
+    /*View port for PC */
+    .product {
+        width: 23%;
+    }
+
+    /* View port for table */
+    @media (max-width: 1024px) {
+        .product {
+            width: 45%;
+        }
+    }
+
+    /* View port for mobile */
+    @media (max-width: 600px) {
+        .product {
+            width: 100%;
+        }
+    }
+
     /* Logo chính của sản phẩm */
         .main-logo {
             width: 100%;
@@ -74,5 +94,8 @@
             transform:translateY(-10px)
         }    
     /* Thanh phan cua cac san pham */
+
+
+    
 
 /* Cac tinh nang phan body */   

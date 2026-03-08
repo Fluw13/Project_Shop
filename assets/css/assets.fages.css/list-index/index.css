@@ -1,41 +1,46 @@
-    /* Logo chính của index */
-        .logo-body img {
-            margin-top: 1vw;
-            width: 100%;
-            height: auto;
-        }
+.main-logo-shop img {
+    width: 100%;
+    height: auto;
+}
 
-    /* các ảnh đại diện cho từng mặt hàng */     
-        .information-t-shirt img, .information-sneaker img, .information-accessory img {
-            width: 100%;
-            height: auto;
-        }
+.information img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
 
-        .information-t-shirt, .information-sneaker, .information-accessory{
-            color: white;
-        }
+.information {
+    color: var(--color-text);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 
-        .information-sneaker, .information-t-shirt, .information-accessory{
-            position: relative; 
-            width: 100%;
-            overflow: hidden;   
-        }   
-    
-    /* Chữ phía dưới của các ảnh */
-        .name-logo {
-            position: absolute;
-            bottom: 0vw; 
-            color: white;
-            width: 100%;
-            font-size: 0.9vw;
-            text-align: center;
-        }
+.information h2, .information .extra-title{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
 
-    /* Chữ phía trên của các ảnh */
-        .main-tilte {
-            font-size: 3vw;
-        }
-    
-/* Cac tinh nang phan body */   
+.information h2 {
+    top: 90%;
+    font-size: 2.5rem;
+}
 
+.information .extra-title {
+    top: 95%;
+    font-size: 1.2rem;
+}
 
+@media (max-width: 768px) {
+    .information h2 {
+        font-size: 1.8rem; /* Thu nhỏ chữ trên mobile */
+    }
+    .information img {
+        height: 300px; /* Thu ngắn banner trên mobile */
+    }
+}
