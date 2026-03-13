@@ -1,4 +1,4 @@
-function initmenu() {
+export function initmenu() {
     // 1. Khai báo các biến dùng chung toàn cục
     const overlay = document.getElementById("overlay");
     const body = document.body;

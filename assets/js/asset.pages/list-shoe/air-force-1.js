@@ -11,6 +11,6 @@ export const AirForce1 = [
     {id: 10, name: "Air Force 1 Trắng Viền Xanh Ngọc", price: "350.000đ", img: "../../../assets/img/sneaker.img/sneaker.air-force-1.img/af1-xanh-ngoc.jpg"},
 ];
 
-import { RenderProduct } from "../../product.js/product.js";
-
+import { RenderProduct } from "../../product/product.js";
 RenderProduct(AirForce1, 'product');
+

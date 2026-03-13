@@ -12,6 +12,6 @@ export const AttackonTitan = [
 ];
 
 
-import { RenderProduct } from "../../product.js/product.js";
+import { RenderProduct } from "../../product/product.js";
 
 RenderProduct(AttackonTitan, 'product');

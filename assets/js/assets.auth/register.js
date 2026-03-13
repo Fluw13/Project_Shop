@@ -53,7 +53,7 @@ function register() {
     }
 
     if (check) {
-        window.location.href = "../../pages/shop/index.html";
+        window.location.href = "../../index.html";
     }
 
     return false;

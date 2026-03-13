@@ -11,6 +11,6 @@ export const Adidas = [
     {id: 10, name: "Adidas Xanh Dương", price: "300.000đ", img: "../../../assets/img/sneaker.img/sneaker.adidas.img/add-xanh.webp"},
 ];
 
-import { RenderProduct } from "../../product.js/product.js";
+import { RenderProduct } from "../../product/product.js";
 
 RenderProduct(Adidas, 'product');

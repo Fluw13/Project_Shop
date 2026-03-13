@@ -11,7 +11,7 @@ export const Ring = [
     {id: 10, name: "Nhẫn Vàng Đính Kim Cương", price: "15.000.000đ", img: "../../../assets/img/accessory.img/accessory.ring.img/list-ring/nhan-vang-dinh-kim-cuong.webp"},
 ];
 
-import { RenderProduct } from "../../product.js/product.js";
+import { RenderProduct } from "../../product/product.js";
 
 RenderProduct(Ring, 'product');
 

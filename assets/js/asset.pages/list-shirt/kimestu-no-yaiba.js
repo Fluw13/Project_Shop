@@ -11,6 +11,6 @@ export const KimetsunoYaiba = [
     {id: 10, name: "Áo Thun Đen Tomioka", price: "150.000đ", img: "../../../assets/img/t-shirt.img/t-shirt.kimestu-no-yaiba.img/ao-thun-tomioka.jpg"},
 ];
 
-import { RenderProduct } from "../../product.js/product.js";
+import { RenderProduct } from "../../product/product.js";
 
 RenderProduct(KimetsunoYaiba, 'product');

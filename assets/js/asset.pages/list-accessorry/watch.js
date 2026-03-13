@@ -11,6 +11,6 @@ export const Watch = [
     {id: 10, name: "Đồng Hồ Kim Cương Doxa", price: "25.000.000đ", img: "../../../assets/img/accessory.img/accessory.watch.img/list-watch/dong-ho-kim-cuong-Doxa-D145RWH.avif"},
 ];
 
-import { RenderProduct } from "../../product.js/product.js";
+import { RenderProduct } from "../../product/product.js";
 
 RenderProduct(Watch, 'product');
