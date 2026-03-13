@@ -1,26 +1,6 @@
 
 /* Cac tinh nang phan body */
 
-
-    /*View port for PC */
-    .product {
-        width: 23%;
-    }
-
-    /* View port for table */
-    @media (max-width: 1024px) {
-        .product {
-            width: 45%;
-        }
-    }
-
-    /* View port for mobile */
-    @media (max-width: 600px) {
-        .product {
-            width: 100%;
-        }
-    }
-
     /* Logo chính của sản phẩm */
         .main-logo {
             width: 100%;
@@ -50,20 +30,17 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
-
-    /* Tên của các list sản phẩm */
-        .Title-logo {
-            padding-left: 20px;
-        }
+        
 
     /* hiệu ứng cho từng san pham */
         .product {
+            flex-direction: column;
             text-decoration: none;
-            display: block;
+            display: flex;
             transition: 0.3s ease;
             border-radius: 20px;
             width: 100%;
-            height: 350px;
+            height: 100%;
         }
 
         .product img {
@@ -80,13 +57,15 @@
             text-align: center;
             padding-top: 10px; 
             color: black;
+            
         }
 
     /* Giá tiền các sản phẩm */
         .price-product {
             text-align: center;
-            padding-top: 10px;
+            padding-top: 20px;
             color: black;
+            margin-top: auto;
         }
 
     /* hiệu ứng khi chọn vào sản phẩm */
@@ -95,6 +74,22 @@
         }    
     /* Thanh phan cua cac san pham */
 
+    /* button */
+    .buttonn {
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+    }
+
+    .bot {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 0.1fr 0.1fr 1fr;
+        font-size: medium;
+        justify-content:space-around;
+        padding-left: 20px;
+    }
 
     
 

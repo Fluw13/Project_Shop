@@ -6,9 +6,6 @@
             color: white;
         }
     /* vị trí các id của input email và mật khẩu */
-        #password, #email {
-            text-align: center;
-        }
 
         /* Phan nhap cac thong tin input */
 
@@ -16,6 +13,10 @@
             border: none;
             outline: none;
             transition: 0.3s ease;
+        }
+
+        .inputt {
+            padding-bottom: 20px;
         }
 
 /* Cac tinh nang phan body */
