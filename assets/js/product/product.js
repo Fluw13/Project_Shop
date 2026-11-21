@@ -1,46 +1,21 @@
+import { parsePrice } from '../shop/money.js';
+import { renderProducts } from '../shop/ui.js';
+
 export function RenderProduct(dataArray, containerID) {
-    const container = document.getElementById(containerID);
-    if (!container) return;
-    let htmlContent = '';
-    dataArray.forEach(function(product) {
-        htmlContent += `
-                <div class = "product">
-                    <figure>
-                        <img src="${product.img}" alt="${product.name}">
-                    </figure>
-                    <div>
-                        <h6 class= "title-product">${product.name}</h6>                  
-                    </div>
-                    <div class = "bot">
-                        <button class = "btn-add-cart buttonn">
-                            <i class="bi bi-chat-dots"></i>
-                        </button>
-                        <button class = "btn-add-cart buttonn" onclick="alert('Đã thêm ${product.name} vào giỏ hàng')">
-                            <i class="bi bi-basket-fill"></i>
-                        </button>
-                        <p class= "price-product">${product.price}</p> 
-                    </div>
-                </div>
-        `;
-    });
-    container.innerHTML = htmlContent;
+  if (typeof document === 'undefined') return;
+  const container = document.getElementById(containerID);
+  if (!container) return;
+  const categoryId = window.location.pathname.split('/').pop().replace(/\.html$/i, '');
+  const products = dataArray.map(item => {
+    const imagePath = String(item.img ?? '');
+    const position = imagePath.indexOf('assets/img/');
+    return {
+      id: `${categoryId}-${item.id}`,
+      name: item.name,
+      price: parsePrice(item.price),
+      image: position >= 0 ? imagePath.slice(position) : '',
+      categoryName: container.dataset.categoryName || 'Fluw Shop'
+    };
+  });
+  renderProducts(container, products);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

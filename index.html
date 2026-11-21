@@ -1,68 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="web sell shoe and shirt">
-    <link rel="stylesheet" href="./assets/css/assets.fages.css/list-index/index.css">
-    <link rel="stylesheet" href="./assets/css/global.css/global.css">
-    <link rel="stylesheet" href="./assets/css/layout.css/footer.css">
-    <link rel="stylesheet" href="./assets/css/layout.css/header.css">
-    <link rel="stylesheet" href="./assets/css/layout.css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script type="module" src="./assets/js/layout/header.js"></script>
-    <script type="module" src="./assets/js/layout/footer.js"></script>
-    <title>Fluw Shop - Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fluw Shop - áo thời trang, giày dép và phụ kiện. Khám phá phong cách của riêng bạn.">
+  <meta name="theme-color" content="#101010">
+  <title>Fluw Shop | Flow your way</title>
+  <link rel="stylesheet" href="assets/css/store.css">
+  <script type="module" src="assets/js/layout/header.js"></script>
+  <script type="module" src="assets/js/layout/footer.js"></script>
+  <script type="module" src="assets/js/shop/home-page.js"></script>
 </head>
-
 <body>
-    <div class="container-fluid">
-        <fluw-header base-path="./"></fluw-header>
-        <main>
-            <section>
-                <figure class="main-logo-shop"><img src="./assets/img/index.img/logo-index.jpg"
-                        alt="Main logo shop index"></figure>
-            </section>
-            <section class="information">
-                <figure>
-                    <img src="./assets/img/index.img/anh-halland-ao.jpg" alt="Logo for page shirt">
-                </figure>
-                <div class="banner-content">
-                    <h2>Flow your way</h2>
-                    <p class="extra-title">
-                        Khẳng định cái tôi qua từng sợi vải
-                    </p>
-                </div>
-            </section>
-            <section class="information">
-                <figure>
-                    <img src="./assets/img/index.img/anh-nguoi-mau-giay.webp" alt="Logo for page shoe">
-                </figure>
-                <div class="banner-content">
-                    <h2>Flow Every Step</h2>
-                    <p class="extra-title">
-                        Đừng chỉ mặc đẹp, hãy mặc đủ
-                    </p>
-                </div>
-            </section>
-            <section class="information">
-                <figure>
-                    <img src="./assets/img/index.img/anh-nguoi-mau-accessory.jpg" alt="Logo for page accessory">
-                </figure>
-                <div class="banner-content">
-                    <h2>Flow Your Details</h2>
-                    <p class="extra-title">
-                        Đừng chỉ mặc đẹp, hãy mặc đủ
-                    </p>
-                </div>
-            </section>
-        </main>
-        <fluw-footer base-path="./"></fluw-footer>
-    </div>
-    <script src="./assets/js/asset.pages/list-index/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <fluw-header base-path="./"></fluw-header>
+  <main id="main">
+    <section class="hero">
+      <img class="hero-image" src="assets/img/index.img/anh-halland-ao.jpg" alt="Bộ sưu tập thời trang Fluw Shop" fetchpriority="high">
+      <div class="page-width" style="width:100%">
+        <div class="hero-content">
+          <span class="eyebrow hero-kicker">FLUW / YOUR EVERYDAY STYLE</span>
+          <h1>FLOW<br><span>YOUR WAY.</span></h1>
+          <p>Khẳng định cái tôi qua từng sợi vải. Những lựa chọn từ thời trang, sneaker đến phụ kiện dành cho phong cách của bạn.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="pages/shop.html">Khám phá sản phẩm →</a>
+            <a class="btn btn-secondary" href="#categories">Xem danh mục</a>
+          </div>
+        </div>
+      </div>
+      <span class="hero-stamp">NEW SEASON / FLUW SHOP</span>
+    </section>
+    <div class="benefits"><div class="page-width benefits-grid">
+      <div class="benefit"><strong>01 / Choose your style</strong>Bộ sưu tập với nhiều phong cách khác nhau</div>
+      <div class="benefit"><strong>02 / Discover more</strong>Tìm kiếm và lọc sản phẩm theo nhu cầu</div>
+      <div class="benefit"><strong>03 / Easy to explore</strong>Lưu giỏ hàng thử nghiệm ngay trên thiết bị</div>
+    </div></div>
+    <section id="categories" class="page-width section">
+      <div class="section-heading"><div><span class="eyebrow">Danh mục nổi bật</span><h2>Định hình phong cách.</h2></div><p>Từ trang phục thường ngày, sneaker đến điểm nhấn phụ kiện.</p></div>
+      <div class="category-grid">
+        <a class="category-card" href="pages/shop.html?group=shirt"><img src="assets/img/index.img/anh-nguoi-mau-ao.webp" alt="Thời trang và áo" loading="lazy"><span class="category-card__body"><span class="eyebrow">01 / COLLECTION</span><h3>Thời trang</h3><span>Khám phá áo →</span></span></a>
+        <a class="category-card" href="pages/shop.html?group=shoe"><img src="assets/img/index.img/anh-nguoi-mau-giay.webp" alt="Giày sneaker" loading="lazy"><span class="category-card__body"><span class="eyebrow">02 / COLLECTION</span><h3>Sneaker</h3><span>Flow every step →</span></span></a>
+        <a class="category-card" href="pages/shop.html?group=accessory"><img src="assets/img/index.img/anh-nguoi-mau-accessory.jpg" alt="Phụ kiện thời trang" loading="lazy"><span class="category-card__body"><span class="eyebrow">03 / COLLECTION</span><h3>Phụ kiện</h3><span>Flow your details →</span></span></a>
+      </div>
+    </section>
+    <section class="page-width section" aria-labelledby="featured-title">
+      <div class="section-heading"><div><span class="eyebrow">Được lựa chọn</span><h2 id="featured-title">Sản phẩm nổi bật.</h2></div><a class="text-link" href="pages/shop.html">Xem tất cả 60 sản phẩm →</a></div>
+      <div id="featured-grid" class="product-grid"></div>
+    </section>
+    <section class="page-width section"><div class="editorial-banner"><div><span class="eyebrow">Explore the collection</span><h2>FLOW EVERY STEP.</h2><p>Không chỉ mặc đẹp. Khám phá những mẫu giày và phụ kiện trong bộ sưu tập hiện có.</p></div><a class="btn" href="pages/shop.html?group=shoe">Khám phá sneaker →</a></div></section>
+  </main>
+  <fluw-footer base-path="./"></fluw-footer>
 </body>
-
 </html>

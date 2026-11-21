@@ -1,0 +1,18 @@
+<!doctype html><html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101010">
+<title>Xem trước đơn hàng | Fluw Shop</title><link rel="stylesheet" href="../assets/css/store.css">
+<script type="module" src="../assets/js/layout/header.js"></script><script type="module" src="../assets/js/layout/footer.js"></script>
+<script type="module" src="../assets/js/shop/checkout-page.js"></script>
+</head><body><fluw-header base-path="../"></fluw-header><main>
+<section class="page-banner"><div class="page-width"><span class="eyebrow">DEMO / CHECKOUT</span><h1>Xem trước đặt hàng.</h1><p>Đây là bước kiểm tra giao diện, không phải giao dịch mua bán thật.</p></div></section>
+<div class="page-width section"><div class="notice"><strong>Chỉ dùng dữ liệu thử nghiệm.</strong> Chưa có máy chủ nhận đơn, tồn kho hoặc cổng thanh toán. Không nhập tên, số điện thoại, địa chỉ thật.</div>
+<div class="checkout-layout"><div>
+<div id="checkout-status" class="empty-state" hidden><h2>Chưa có sản phẩm</h2><p>Hãy thêm sản phẩm vào giỏ trước.</p><a class="btn btn-primary" href="shop.html">Xem sản phẩm</a></div>
+<form id="demo-order-form" class="checkout-form" autocomplete="off"><h2>Thông tin mẫu</h2>
+<div class="form-field"><label for="demo-name">Tên mẫu</label><input id="demo-name" type="text" value="Khách hàng thử nghiệm" maxlength="80" required></div>
+<div class="form-field"><label for="demo-address">Địa chỉ mẫu</label><input id="demo-address" type="text" value="Địa chỉ dùng cho demo" maxlength="150" required></div>
+<div class="form-field"><label for="demo-note">Ghi chú mẫu (không bắt buộc)</label><input id="demo-note" type="text" placeholder="Không nhập dữ liệu cá nhân" maxlength="150"></div>
+<button class="btn btn-primary" type="submit">Xác nhận bản xem trước</button><small>Không gửi thông tin đến bất kỳ máy chủ nào, không ghi đơn hàng thật.</small></form>
+<div id="demo-receipt" class="empty-state" hidden role="status"><h2>Đã hoàn thành thử nghiệm ✓</h2><p id="receipt-content"></p><a class="btn btn-primary" href="shop.html">Quay lại cửa hàng</a></div>
+</div><aside class="order-summary"><h2>Đơn hàng xem trước</h2><div id="checkout-preview"></div><p class="summary-row summary-total"><span>Tạm tính</span><strong id="checkout-total">0 đ</strong></p><p class="muted">Phí vận chuyển chưa xác định. Không có thanh toán thật.</p></aside></div></div>
+</main><fluw-footer base-path="../"></fluw-footer></body></html>
